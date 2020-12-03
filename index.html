@@ -9,27 +9,66 @@
 </head>
 
 <body>
+  <!-- header display none-->
+  <header>
+    <h1>FDT Dashboard</h1>
+  </header>
+
+  <!-- general layout -->
   <div class="grid-wrapper page-layout">
-    <div class="box header">Header</div>
-    <div class="box sidebar">Sidebar</div>
-    <div class="box content">
-      <h2>Data overview</h2>
-      <div class="grid-wrapper content-layout">
-        <div class="box chart chart-one">
-          <h3>General Results</h3>
-        </div>
-        <div class="box chart chart-two">
-          <h3>Ratings by category</h3>
-        </div>
-        <div class="box terms">
-          <span>TERM 1</span>
-        </div>
-        <div class="box chart-table">
-          <h3 class="highlighted-header">Support Requests</h3>
-        </div>
-      </div>
-      <p>Showing</p>
+
+    <!-- navbar -->
+    <div class="box user-img">
+      <img src="https://picsum.photos/id/24/40/40" alt="user image">
     </div>
+
+    <nav class="box navbar">
+      <ul>
+        <li><a class="navbar-active" href="#">Overview</a></li>
+        <li><a href="#">Campaings</a></li>
+        <li><a href="#">Analytics</a></li>
+      </ul>
+      <button>Premium</button>
+    </nav>
+
+
+    <!-- sidebar -->
+    <aside class="box sidebar">
+      Sidebar
+    </aside>
+
+    <!-- content -->
+    <main class="box content">
+      <section>
+        <h2>Data overview</h2>
+        <div class="grid-wrapper content-layout">
+
+          <!-- left chart -->
+          <div class="box chart chart-one">
+            <h3>General Results</h3>
+          </div>
+
+          <!-- rigth chart -->
+          <div class="box chart chart-two">
+            <h3>Ratings by category</h3>
+          </div>
+
+          <!-- terms -->
+          <div class="box terms">
+            <span>TERM 1</span>
+          </div>
+
+          <!-- table -->
+          <div class="box chart-table">
+            <h3 class="highlighted-header">Support Requests</h3>
+          </div>
+
+          <!-- higligth -->
+          <p>Showing</p>
+      </section>
+    </main>
+
+  </div>
 </body>
 
 </html>
