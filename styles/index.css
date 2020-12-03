@@ -1,0 +1,86 @@
+/* general style settings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+header {
+  display: none;
+}
+
+h3,
+h2 {
+  padding-bottom: 2.5rem;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(31, 28, 59);
+}
+
+.highlighted-header {
+  font-size: 1.2rem;
+}
+
+p {
+  color: rgb(183, 188, 200);
+  padding: 3rem 0 3rem 0;
+}
+
+a {
+  color: rgb(183, 188, 200);
+}
+
+button {
+  padding: 0.6rem 1rem;
+  color: rgb(250, 250, 251);
+  background-color: rgb(0, 120, 255);
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.box {
+  background-color: rgb(255, 255, 255);
+  color: rgb(168, 175, 180);
+  border-radius: 1px;
+  border: 1px solid rgb(242, 242, 242);
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-gap: 0em;
+}
+
+/* general layout settings */
+.page-layout {
+  grid-template-columns: 6rem auto;
+  grid-template-areas:
+    "user-img  navbar"
+    "sidebar content";
+}
+
+.content {
+  grid-area: content;
+  background-color: rgb(250, 250, 252);
+  padding: 2.5rem 2.5rem 0 2.5rem;
+}
+
+@media only screen and (max-width: 820px) {
+  /* responsive general layout */
+  .page-layout {
+    grid-template-columns: 15% auto;
+    grid-template-areas:
+      "user-img navbar"
+      "sidebar sidebar"
+      "content content";
+  }
+}

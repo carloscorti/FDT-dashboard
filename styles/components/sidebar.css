@@ -1,0 +1,115 @@
+/* layout settings */
+.sidebar {
+  grid-area: sidebar;
+  color: rgb(29, 116, 222);
+  /* padding: 1rem; */
+}
+
+/* sidebar design */
+.icon {
+  display: inline-block;
+  width: 1.6em;
+  height: 1.6em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  stroke-width: 6;
+  padding: 1rem 2.3rem;
+}
+
+.icon:hover {
+  stroke: rgb(0, 120, 255);
+  fill: rgb(0, 120, 255);
+}
+
+aside ul {
+  padding-top: 2.2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80%;
+  /* list-style: none;
+  text-align: center; */
+}
+
+aside ul li {
+  display: inline-block;
+}
+
+aside ul li a {
+  display: block;
+  text-decoration: none;
+}
+
+aside ul li a,
+aside ul li a:after,
+aside ul li a:before {
+  transition: all 0.5s;
+}
+
+aside ul li a:hover {
+  color: rgb(0, 120, 255);
+}
+
+aside ul li a {
+  position: relative;
+  display: block;
+}
+
+aside ul li a:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0%;
+  content: ".";
+  color: transparent;
+  background: rgb(0, 120, 255);
+  width: 4px;
+}
+
+aside ul li a:hover:after {
+  /* width: 50%; */
+  height: 100%;
+}
+
+.sidebar-active {
+  color: rgb(0, 120, 255);
+  /* font-weight: 800; */
+}
+
+.sidebar-active:after {
+  height: 100%;
+}
+
+@media only screen and (max-width: 820px) {
+  .navbar {
+    padding: 0rem 0rem 1.2rem 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  aside ul {
+    padding: 1.8rem 0rem;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .sidebar-active {
+    color: inherit;
+  }
+
+  .icon {
+    padding: 0;
+  }
+
+  aside ul li a:after {
+    display: none;
+  }
+
+  aside ul li a:hover {
+    color: inherit;
+  }
+}
