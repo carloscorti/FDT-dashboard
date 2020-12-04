@@ -1,0 +1,66 @@
+:root {
+  --bars: rgb(0, 120, 255);
+  --higlated-number: rgb(31, 28, 59);
+  --bar-number: 14;
+}
+
+.higlated-number {
+  font-size: 1.5rem;
+  color: var(--higlated-number);
+}
+
+.barchart-header {
+  padding: 0.8rem 0;
+}
+
+.barchart-wrapper {
+  display: grid;
+  grid-template-columns: repeat(var(--bar-number), minmax(1px, 1fr));
+  height: 80px;
+  width: 100%;
+}
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0rem;
+  height: 100%;
+}
+
+.column-flex > span {
+  display: inline-block;
+  padding-top: 0.5rem;
+}
+
+.chart-column {
+  width: 50%;
+  border-radius: 3px;
+  transition: all 0.6s ease;
+  background-color: var(--bars);
+}
+
+.barchart-wrapper div:nth-child(2n) > .chart-column {
+  opacity: 0.5;
+}
+
+.tiny {
+  height: 20%;
+}
+
+.low {
+  height: 30%;
+}
+
+.mid {
+  height: 40%;
+}
+
+.tall {
+  height: 50%;
+}
+
+.big {
+  height: 100%;
+}
