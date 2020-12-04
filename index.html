@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="styles/components/navbar.css">
   <link rel="stylesheet" href="styles/components/sidebar.css">
+  <link rel="stylesheet" href="styles/components/progressbar.css">
+  <link rel="stylesheet" href="styles/components/overviewHeader.css">
   <link rel="stylesheet" href="styles/pages/overview.css">
+
   <title>Dashboard Sketchup</title>
 </head>
 
@@ -92,7 +95,18 @@
     <!-- content -->
     <main class="box content">
       <section>
-        <h2>Data overview</h2>
+
+        <!-- overview header -->
+        <div class="overview-header-flex">
+          <h2>Data overview</h2>
+          <div class="overview-header-progres-flex">
+            <div class="progress">
+            </div>
+            <span><b>643</b> insertions needed to complete</span>
+          </div>
+        </div>
+
+        <!-- overview carts -->
         <div class="grid-wrapper overview-layout">
 
           <!-- left chart -->

@@ -1,0 +1,37 @@
+/* design settings */
+.overview-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2.5rem;
+}
+
+.overview-header-progres-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem;
+  width: 42%;
+}
+
+.overview-header-progres-flex > span {
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 820px) {
+  .overview-header-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overview-header-flex > h2 {
+    width: 100%;
+  }
+
+  .overview-header-progres-flex {
+    padding-top: 1rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+.progress {
+  display: inline-block;
+  background: rgb(237, 238, 243);
+  border-radius: 10px;
+  height: 6px;
+  width: 19rem;
+  padding: 0px;
+}
+
+.progress:after {
+  content: "";
+  display: block;
+  background: rgb(0, 120, 255);
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+}

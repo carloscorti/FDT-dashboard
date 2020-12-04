@@ -15,8 +15,12 @@ header {
   display: none;
 }
 
-h3,
+/* h3,
 h2 {
+  padding-bottom: 2.5rem;
+} */
+
+h3 {
   padding-bottom: 2.5rem;
 }
 
@@ -35,9 +39,17 @@ p {
   padding: 3rem 0 3rem 0;
 }
 
+b {
+  color: rgb(79, 87, 103);
+}
+
 a {
   color: rgb(183, 188, 200);
 }
+
+/* span {
+  padding-bottom: 1rem;
+} */
 
 button {
   padding: 0.6rem 1rem;
@@ -62,6 +74,8 @@ button {
 
 /* general layout settings */
 .page-layout {
+  /* display: grid;
+  grid-gap: 0em; */
   grid-template-columns: 6rem auto;
   grid-template-areas:
     "user-img  navbar"
