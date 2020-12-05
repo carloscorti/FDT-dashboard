@@ -1,8 +1,5 @@
 /* layout settings */
 .overview-layout {
-  /* border-radius: 10px; */
-  /* display: grid;
-  grid-gap: 0em; */
   grid-template-columns: 40% 40% 20%;
   grid-template-areas:
     "chart-one   chart-two  terms"
@@ -13,8 +10,6 @@
 .chart-one {
   grid-area: chart-one;
   padding: 3rem;
-  /* border: none;
-  border-radius: 10px; */
 }
 
 .chart-two {
@@ -44,5 +39,17 @@
       "chart-two"
       "terms"
       "chart-table";
+  }
+
+  .chart-one {
+    padding: 2rem;
+  }
+
+  .chart-two {
+    padding: 2rem;
+  }
+
+  .chart-table {
+    padding: 2rem;
   }
 }
