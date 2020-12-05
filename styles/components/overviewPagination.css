@@ -1,0 +1,29 @@
+.overview-pagination-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overview-pagination-flex > p {
+  width: 50%;
+}
+
+.overview-pagination-flex > p:nth-child(2) {
+  text-align: end;
+}
+
+.overview-pagination-flex > p > button {
+  padding: 0.3rem 0.6rem;
+  margin-left: 0.5rem;
+  box-sizing: border-box;
+}
+
+.overview-pagination-flex > p > button:nth-child(2) {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(168, 175, 180);
+  color: rgb(168, 175, 180);
+}
+
+.overview-pagination-flex > p > b:nth-child(3) {
+  color: rgb(168, 175, 180);
+}

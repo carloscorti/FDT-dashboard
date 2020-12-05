@@ -85,10 +85,6 @@ button:hover {
   padding: 2.5rem 2.5rem 0 2.5rem;
 }
 
-.pagination {
-  padding: 3rem 0 3rem 0;
-}
-
 @media only screen and (max-width: 825px) {
   /* responsive general layout */
   .page-layout {
