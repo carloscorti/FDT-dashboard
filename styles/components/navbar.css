@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 /* navbar design */
@@ -30,8 +31,6 @@ nav ul {
   justify-content: flex-start;
   align-items: center;
   width: 80%;
-  /* list-style: none;
-  text-align: center; */
 }
 
 nav ul li {
@@ -78,7 +77,6 @@ nav ul li a:hover:after {
 
 .navbar-active {
   color: rgb(0, 120, 255);
-  /* font-weight: 800; */
 }
 
 .navbar-active:after {

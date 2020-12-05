@@ -25,10 +25,10 @@
 
 .terms {
   grid-area: terms;
-  padding: 3rem;
+  padding: 4rem 3rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-content: space-between;
 }
 
@@ -65,5 +65,9 @@
       "chart-two"
       "terms"
       "chart-table";
+  }
+
+  .terms {
+    padding: 1rem 2rem;
   }
 }

@@ -1,0 +1,102 @@
+/* table design */
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  padding-bottom: 1rem;
+}
+td {
+  padding: 0.6rem 0;
+  word-wrap: break-word;
+}
+
+.open {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(168, 175, 180);
+  color: rgb(168, 175, 180);
+}
+
+td > button {
+  padding: 0.5rem;
+  width: 80%;
+}
+
+td:nth-of-type(1) {
+  color: rgb(56, 67, 87);
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr:nth-child(odd) {
+    background: rgb(250, 250, 252);
+  }
+
+  /* Behave  like a "row" */
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:nth-of-type(1) {
+    color: inherit;
+    font-weight: inherit;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0;
+    left: 1rem;
+    width: 45%;
+    white-space: nowrap;
+    padding: 0.6rem 0;
+    color: rgb(56, 67, 87);
+    font-weight: 600;
+  }
+
+  /* Label the data */
+  td:nth-of-type(1):before {
+    content: "Name";
+  }
+  td:nth-of-type(2):before {
+    content: "Email";
+  }
+  td:nth-of-type(3):before {
+    content: "Time";
+  }
+  td:nth-of-type(4):before {
+    content: "Phone Number";
+  }
+  td:nth-of-type(5):before {
+    content: "City";
+  }
+  td:nth-of-type(6):before {
+    content: "Status";
+  }
+}

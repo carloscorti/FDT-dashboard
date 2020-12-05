@@ -1,4 +1,5 @@
 .term-wrapper {
+  font-size: 0.65rem;
   display: flex;
   justify-content: center;
   align-content: space-between;
@@ -6,23 +7,26 @@
 }
 
 .term-header {
-  width: 70%;
+  width: 65%;
   display: inline-block;
-  font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .term-value {
-  width: 30%;
+  width: 35%;
   color: rgb(31, 28, 59);
   display: inline-block;
-  font-size: 0.8rem;
   text-align: left;
   font-weight: 600;
 }
 
 @media only screen and (max-width: 1025px) {
+  .term-wrapper {
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
+  }
+
   .term-value {
     width: 20%;
   }
