@@ -26,7 +26,7 @@ aside ul {
   padding-top: 2.2rem;
   display: flex;
   flex-flow: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   height: 80%;
   /* list-style: none;
@@ -35,6 +35,7 @@ aside ul {
 
 aside ul li {
   display: inline-block;
+  padding: 1rem 0;
 }
 
 aside ul li a {
@@ -99,6 +100,10 @@ aside ul li a:hover:after {
 
   .sidebar-active {
     color: inherit;
+  }
+
+  aside ul li {
+    padding: 0;
   }
 
   .icon {
