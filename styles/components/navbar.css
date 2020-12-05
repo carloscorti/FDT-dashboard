@@ -85,7 +85,7 @@ nav ul li a:hover:after {
   width: 50%;
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 825px) {
   /* responsive navbar design */
   .navbar {
     padding: 0rem 0rem 1.2rem 0;
