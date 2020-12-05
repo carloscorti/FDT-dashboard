@@ -39,6 +39,13 @@
   border-radius: 3px;
   transition: all 0.6s ease;
   background-color: var(--bars);
+  animation: columnfill 0.6s linear forwards;
+}
+
+@keyframes columnfill {
+  from {
+    height: 0;
+  }
 }
 
 .barchart-wrapper div:nth-child(2n) > .chart-column {
