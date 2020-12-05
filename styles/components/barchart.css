@@ -71,3 +71,7 @@
 .big {
   height: 100%;
 }
+
+.barcharchart-two-color {
+  background-color: rgb(240, 29, 113);
+}

@@ -17,15 +17,3 @@
   justify-content: flex-end;
   align-items: flex-end;
 }
-
-.chart-two-color {
-  stroke: rgb(240, 29, 113);
-}
-
-svg circle.chart-two-color:nth-child(2) {
-  stroke: rgb(240, 29, 113);
-}
-
-.barcharchart-two-color {
-  background-color: rgb(240, 29, 113);
-}
