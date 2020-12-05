@@ -1,0 +1,33 @@
+.term-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  width: 100%;
+}
+
+.term-header {
+  width: 70%;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.term-value {
+  width: 30%;
+  color: rgb(31, 28, 59);
+  display: inline-block;
+  font-size: 0.8rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1025px) {
+  .term-value {
+    width: 20%;
+  }
+
+  .term-header {
+    width: 80%;
+  }
+}
