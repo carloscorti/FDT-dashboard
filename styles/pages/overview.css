@@ -53,3 +53,15 @@
     padding: 2rem;
   }
 }
+
+@media only screen and (max-width: 1025px) {
+  /* responsive layout */
+  .overview-layout {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "chart-one"
+      "chart-two"
+      "terms"
+      "chart-table";
+  }
+}
