@@ -1,6 +1,6 @@
 node_modules/
-# public/build
-# public/assets.json
+public/build
+public/assets.json
 
 
 
