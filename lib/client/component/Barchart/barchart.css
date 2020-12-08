@@ -1,12 +1,10 @@
 :root {
   --bars: rgb(0, 120, 255);
-  --higlated-number: rgb(31, 28, 59);
-  /* --bar-number: 14; */
 }
 
 .higlated-number {
   font-size: 1.5rem;
-  color: var(--higlated-number);
+  color: rgb(31, 28, 59);
 }
 
 .barchart-header {
@@ -15,7 +13,6 @@
 
 .barchart-wrapper {
   display: grid;
-  /* grid-template-columns: repeat(var(--bar-number), minmax(1px, 1fr)); */
   height: 80px;
   width: 100%;
 }
@@ -51,27 +48,3 @@
 .barchart-wrapper div:nth-child(2n) > .chart-column {
   opacity: 0.5;
 }
-
-/* .tiny {
-  height: 20%;
-}
-
-.low {
-  height: 30%;
-}
-
-.mid {
-  height: 40%;
-}
-
-.tall {
-  height: 50%;
-}
-
-.big {
-  height: 100%;
-} */
-
-/* .barcharchart-two-color {
-  background-color: rgb(240, 29, 113);
-} */
