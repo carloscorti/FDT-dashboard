@@ -11,7 +11,7 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve(__dirname, 'public', 'build'),
+    path: path.resolve(__dirname, '../', 'public', 'build'),
     filename: 'js_[name].[contentHash].js',
   },
 
@@ -37,7 +37,7 @@ module.exports = {
     // for assets.json list on public folder
     new AssetsPlugin({
       filename: 'assets.json',
-      path: path.join(__dirname, 'public'),
+      path: path.join(__dirname, '../', 'public', 'build'),
     }),
     // to clean public/build folder each time webpack outputs files
     new CleanWebpackPlugin(),

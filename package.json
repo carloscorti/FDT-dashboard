@@ -9,12 +9,15 @@
   "description": "",
   "main": "lib/server/server.js",
   "scripts": {
-    "webpack": "webpack -wd",
-    "build-webpack": "webpack -p",
+    "webpack": "webpack --config ./webpack/webpack.config -wd",
+    "webpack-ssr": "webpack --config ./webpack/webpack.config-ssr -wd",
+    "build-webpack-assets": "webpack --config ./webpack/webpack.config -p",
+    "build-webpack-ssr": "webpack --config ./webpack/webpack.config-ssr -p",
     "dev": "nodemon --exec babel-node lib/server/server.js",
-    "build-node": "babel lib -d build --config-file ./babel-node.config.js --copy-files",
-    "heroku-postbuild": "npm run build-webpack && npm run build-node",
-    "start": "NODE_ENV=production pm2-runtime start build/server/server.js -i max --name appProd"
+    "build-webpack": "npm run build-webpack-assets && npm run build-webpack-ssr",
+    "build-node": "babel lib -d dist --config-file ./babel-node.config.js --copy-files",
+    "heroku-postbuild": "npm run build-webpack && npm run build-webpack-ssr && npm run build-node",
+    "start": "NODE_ENV=production pm2-runtime start dist/server/server.js -i max --name appProd"
   },
   "author": "",
   "license": "ISC",
@@ -40,6 +43,7 @@
     "css-loader": "4.2.2",
     "ejs": "3.1.5",
     "express": "4.17.1",
+    "ignore-loader": "0.1.2",
     "mini-css-extract-plugin": "0.10.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "pm2": "4.4.1",
@@ -48,6 +52,7 @@
     "react-dom": "16.13.1",
     "react-router-dom": "5.2.0",
     "webpack": "4.44.1",
-    "webpack-cli": "3.3.12"
+    "webpack-cli": "3.3.12",
+    "webpack-node-externals": "2.5.2"
   }
 }
