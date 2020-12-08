@@ -11,7 +11,7 @@ body {
   font-size: 14px;
 }
 
-/* Hide headers (but not display: none;, for accessibility) */
+/* Hide table headers (but not display: none;, for accessibility) */
 header {
   position: absolute;
   top: -9999px;
@@ -28,9 +28,9 @@ h3 {
   color: rgb(31, 28, 59);
 }
 
-/* .highlighted-header {
+.highlighted-header {
   font-size: 1.2rem;
-} */
+}
 
 p {
   color: rgb(183, 188, 200);
@@ -57,6 +57,10 @@ button {
 
 button:hover {
   opacity: 0.8;
+}
+
+button:focus {
+  outline: none;
 }
 
 .box {
