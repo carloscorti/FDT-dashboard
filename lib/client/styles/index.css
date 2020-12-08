@@ -11,7 +11,7 @@ body {
   font-size: 14px;
 }
 
-/* Hide table headers (but not display: none;, for accessibility) */
+/* Hide headers (but not display: none;, for accessibility) */
 header {
   position: absolute;
   top: -9999px;
@@ -28,9 +28,9 @@ h3 {
   color: rgb(31, 28, 59);
 }
 
-.highlighted-header {
+/* .highlighted-header {
   font-size: 1.2rem;
-}
+} */
 
 p {
   color: rgb(183, 188, 200);
@@ -75,8 +75,8 @@ button:hover {
 .page-layout {
   grid-template-columns: 6rem auto;
   grid-template-areas:
-    "user-img  navbar"
-    "sidebar content";
+    'user-img  navbar'
+    'sidebar content';
 }
 
 .content {
@@ -90,8 +90,8 @@ button:hover {
   .page-layout {
     grid-template-columns: 15% auto;
     grid-template-areas:
-      "user-img navbar"
-      "sidebar sidebar"
-      "content content";
+      'user-img navbar'
+      'sidebar sidebar'
+      'content content';
   }
 }

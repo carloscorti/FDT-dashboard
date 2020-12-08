@@ -2,7 +2,9 @@
 .sidebar {
   grid-area: sidebar;
   color: rgb(29, 116, 222);
-  /* padding: 1rem; */
+  background-color: rgb(255, 255, 255);
+  border-radius: 1px;
+  border: 1px solid rgb(242, 242, 242);
 }
 
 /* sidebar design */
@@ -63,7 +65,7 @@ aside ul li a:after {
   bottom: 0;
   right: 0;
   height: 0%;
-  content: ".";
+  content: '.';
   color: transparent;
   background: rgb(0, 120, 255);
   width: 4px;
@@ -98,10 +100,6 @@ aside ul li a:hover:after {
     width: 100%;
   }
 
-  .sidebar-active {
-    color: inherit;
-  }
-
   aside ul li {
     padding: 0;
   }
@@ -112,9 +110,5 @@ aside ul li a:hover:after {
 
   aside ul li a:after {
     display: none;
-  }
-
-  aside ul li a:hover {
-    color: inherit;
   }
 }
