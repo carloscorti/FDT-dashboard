@@ -17,3 +17,27 @@
   justify-content: flex-end;
   align-items: flex-end;
 }
+
+@media only screen and (max-width: 500px) {
+  /* responsive general layout */
+  .chartsarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    width: 100%;
+  }
+
+  .barchart {
+    width: 100%;
+  }
+
+  .circlechart {
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
