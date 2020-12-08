@@ -65,7 +65,7 @@ nav ul li a:after {
   right: 0;
   margin: auto;
   width: 0%;
-  content: ".";
+  content: '.';
   color: transparent;
   background: rgb(0, 120, 255);
   height: 3px;
@@ -98,10 +98,6 @@ nav ul li a:hover:after {
     width: 100%;
   }
 
-  .navbar-active {
-    font-weight: 800;
-  }
-
   nav ul li a {
     padding: 0;
   }
@@ -112,10 +108,5 @@ nav ul li a:hover:after {
 
   nav ul li a:after {
     display: none;
-  }
-
-  nav ul li a:hover {
-    color: inherit;
-    font-weight: inherit;
   }
 }
