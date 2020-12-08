@@ -13,9 +13,12 @@
 }
 
 .overview-pagination-flex > p > button {
-  padding: 0.3rem 0.6rem;
+  padding: 0.3rem 0.3rem;
+  text-align: center;
   margin-left: 0.5rem;
   box-sizing: border-box;
+  width: 1.7rem;
+  height: 1.8rem;
 }
 
 .overview-pagination-flex > p > button:nth-child(2) {
