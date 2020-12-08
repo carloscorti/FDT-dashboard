@@ -1,19 +1,17 @@
 .progress {
-  display: inline-block;
+  height: 6px;
   background: rgb(237, 238, 243);
   border-radius: 10px;
-  height: 6px;
   width: 18rem;
   padding: 0px;
 }
 
-.progress:after {
-  content: "";
+.progress > span {
   display: block;
-  background: rgb(0, 120, 255);
-  width: 80%;
+  /* width: 80%; */
   height: 100%;
   border-radius: 10px;
+  background: rgb(0, 120, 255);
   transition: all 0.6s ease;
   animation: progressfill 0.6s linear forwards;
 }
