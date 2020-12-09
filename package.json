@@ -11,12 +11,12 @@
   "scripts": {
     "webpack": "webpack --config ./webpack/webpack.config -wd",
     "webpack-ssr": "webpack --config ./webpack/webpack.config-ssr -wd",
+    "dev": "nodemon --exec babel-node lib/server/server.js",
     "build-webpack-assets": "webpack --config ./webpack/webpack.config -p",
     "build-webpack-ssr": "webpack --config ./webpack/webpack.config-ssr -p",
-    "dev": "nodemon --exec babel-node lib/server/server.js",
     "build-webpack": "npm run build-webpack-assets && npm run build-webpack-ssr",
     "build-node": "babel lib -d dist --config-file ./babel-node.config.js --copy-files",
-    "heroku-postbuild": "npm run build-webpack && npm run build-webpack-ssr && npm run build-node",
+    "heroku-postbuild": "npm run build-webpack && npm run build-node",
     "start": "NODE_ENV=production pm2-runtime start dist/server/server.js -i max --name appProd"
   },
   "author": "",

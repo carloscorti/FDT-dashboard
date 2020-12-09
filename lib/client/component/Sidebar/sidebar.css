@@ -27,12 +27,10 @@
 aside ul {
   padding-top: 2.2rem;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   height: 80%;
-  /* list-style: none;
-  text-align: center; */
 }
 
 aside ul li {
@@ -72,13 +70,11 @@ aside ul li a:after {
 }
 
 aside ul li a:hover:after {
-  /* width: 50%; */
   height: 100%;
 }
 
 .sidebar-active {
   color: rgb(0, 120, 255);
-  /* font-weight: 800; */
 }
 
 .sidebar-active:after {
@@ -86,10 +82,8 @@ aside ul li a:hover:after {
 }
 
 @media only screen and (max-width: 825px) {
-  .navbar {
-    padding: 0rem 0rem 1.2rem 0;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  .sidebar {
+    height: fit-content;
   }
 
   aside ul {
